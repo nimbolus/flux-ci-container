@@ -7,5 +7,5 @@ This image is useful for CI jobs requiring the different CLI tools.
 
 ```sh
 podman run -it -v $PWD:/build \
-    ghcr.io/nimbolus/flux-ci-container
+    ghcr.io/nimbolus/flux-ci-container:latest
 ```
