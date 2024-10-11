@@ -72,6 +72,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           build-args: |
             FLUX_VERSION=${{ env.FLUX_VERSION }}
+            KUSTOMIZE_VERSION=${{ env.KUSTOMIZE_VERSION }}
+            KUBECONFORM_VERSION=${{ env.KUBECONFORM_VERSION }}
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
