@@ -11,7 +11,7 @@ ARG FLUX_VERSION
 ARG KUSTOMIZE_VERSION
 ARG KUBECONFORM_VERSION
 
-LABEL org.opencontainers.image.description "Alpine image with flux-cli (${FLUX_VERSION}), kustomize (${KUSTOMIZE_VERSION}) and kubeconform (${FLUX_VERSION})"
+LABEL org.opencontainers.image.description="Alpine image with flux-cli (${FLUX_VERSION}), kustomize (${KUSTOMIZE_VERSION}) and kubeconform (${FLUX_VERSION})"
 
 COPY --from=flux-cli /usr/local/bin/flux /usr/local/bin/flux
 COPY --from=kustomize /app/kustomize /usr/local/bin/kustomize
