@@ -1,4 +1,4 @@
-name: Release new version of container image
+name: Release container image
 
 on:
   push:
@@ -13,7 +13,7 @@ env:
   KUBECONFORM_VERSION: "v0.6.7"
 
 jobs:
-  build-and-push-image:
+  build-image:
     runs-on: ubuntu-latest
     permissions:
       contents: read
